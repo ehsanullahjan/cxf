@@ -32,6 +32,9 @@ import javax.ws.rs.HttpMethod;
 import javax.ws.rs.core.EntityTag;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.NioCompletionHandler;
+import javax.ws.rs.core.NioErrorHandler;
+import javax.ws.rs.core.NioReaderHandler;
 import javax.ws.rs.core.Request;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;
@@ -381,5 +384,31 @@ public class RequestImpl implements Request {
             }
             return 0;
         }
+    }
+
+    @Override
+    public void entity(NioReaderHandler arg0) {
+        // TODO: Not Implemented
+    }
+
+
+
+    @Override
+    public void entity(NioReaderHandler arg0, NioCompletionHandler arg1) {
+        // TODO: Not Implemented
+    }
+
+
+
+    @Override
+    public void entity(NioReaderHandler arg0, NioErrorHandler arg1) {
+        // TODO: Not Implemented
+    }
+
+
+
+    @Override
+    public void entity(NioReaderHandler arg0, NioCompletionHandler arg1, NioErrorHandler arg2) {
+     // TODO: Not Implemented
     }
 }
